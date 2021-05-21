@@ -1,0 +1,35 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+ <header class="jumbotron text-center">
+     <h1>lab6</h1>
+     <p>lab6</p>
+     <nav>
+         <a class="btn btn-info" href="{% url 'website:home' %}">Home</a>
+         <a class="btn btn-info" href="{% url 'website:lista' %}">Home2</a>
+         <a class="btn btn-info" href="{% url 'website:saudar' %}">Home3</a>
+     </nav>
+ </header>
+ <footer>Lab6 faz-se em django</footer>
+ <article class="container">
+        <main class="col-sm-6">
+            {% block main %}
+            {% endblock main %}
+        </main>
+        <aside>
+            {% load static %}
+            <img src="{% static 'images/image.png' %}">
+        </aside>
+    </article>
+    <footer>...</footer>
+</body>
+</html>
