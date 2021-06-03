@@ -1,0 +1,18 @@
+{% extends 'website/base.html' %}
+<body>
+<nav id="menuSticky">
+
+        <a href="celtic.html" > {% load static %} <img src="{% static "/website/static/img/celtic.png" %}" alt="celtic" style="width:80px; height:80px" /></a>
+        <a href="rangers.html">  {% load static %} <img src="{% static "/website/static/img/rangers.png" %}" alt="rangers" style="width:80px; height:80px"></a>
+        <a href="hibernian.html"> {% load static %} <img src="{% static "/website/static/img/hiberian.png" %}" alt="hiberian" style="width:80px; height:80px"></a>
+        <a href="aberdeen.html">  {% load static %} <img src="{% static "/website/static/img/aberdeen.png" %}" alt="aberdeen" style="width:80px; height:80px"></a>
+        <a href="livingston.html">  {% load static %} <img src="{% static "/website/static/img/livingston.png" %}" alt="livingston" style="width:80px; height:80px"></a>
+        <a href="rossCounty.html">  {% load static %} <img src="{% static "/website/static/img/ross-county.png" %}" alt="ross-county" style="width:80px; height:80px"></a>
+        </nav>
+
+<main>
+    {% block main1 %}
+    {% endblock main1 %}
+</main>
+
+</body>
